@@ -50,3 +50,42 @@ Below are the Python libraries used in this project, along with their functional
 
 These libraries collectively enable data preprocessing, model building, evaluation, optimization, and interpretability for the water potability classification project.
 
+## **Methodology**  
+
+The methodology for the *Water Potability Classification* project is divided into the following steps:  
+
+1. **Library Import**  
+   Necessary Python libraries are imported to facilitate data manipulation, visualization, preprocessing, modeling, evaluation, and interpretability.
+
+2. **Exploratory Data Analysis (EDA)**  
+   Initial analysis is conducted to understand the data distribution, identify missing values, and explore relationships between features and the target variable (`Potability`). Visualizations like histograms, boxplots, and correlation heatmaps are used for insights.  
+
+3. **Preprocessing and Transformation**  
+   - **Data Cleaning**: Handle missing values, outliers, and inconsistencies in the dataset.  
+   - **Data Transformation**: Normalize numerical features to ensure uniform scaling.  
+   - **Feature Selection**: Apply statistical methods such as Chi-square (Chi2), Sequential Feature Selector (SFS), and Recursive Feature Elimination (RFE) to identify important features.  
+   - **Resampling**: Use SMOTE (Synthetic Minority Oversampling Technique) to address class imbalance.  
+   - **Feature Selection on Resampled Data**: Reapply feature selection techniques after balancing the dataset.  
+
+4. **Training**  
+   Train models using five different machine learning algorithms, including Random Forest, Logistic Regression, XGBoost, Decision Tree, and Naive Bayes. For each algorithm, experiments are conducted using:  
+   - Original data.  
+   - Resampled data.  
+   - Different feature selection techniques to compare performance.  
+
+5. **Evaluation of the Best Model**  
+   Evaluate model performance using metrics such as accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrix. The best model is selected based on its performance across these metrics.  
+
+6. **Model Interpretation with LIME**  
+   Use the LIME (Local Interpretable Model-Agnostic Explanations) framework to interpret and explain the predictions of the best-performing model. LIME provides feature importance for individual predictions, enhancing transparency and trust in the model.  
+
+7. **Error Analysis**  
+   Analyze misclassified samples to understand patterns in prediction errors, identify potential limitations, and recommend improvements.  
+
+8. **User Scenarios**  
+   Provide use cases and scenarios where the model can be deployed, such as:  
+   - Monitoring water quality in real-time systems.  
+   - Assisting water management agencies in decision-making.  
+   - Providing rapid water safety assessments for communities and researchers.  
+
+This structured approach ensures the project achieves its goals of creating an accurate, interpretable, and user-oriented water potability classification system.
