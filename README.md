@@ -1,12 +1,12 @@
 # 🚱 Water-Potability-Classification 🚰
 
 ## Table of Content
-1. (**Project Overview**)[#Project%20Overview]
-2. (**Dataset Overview**)[#Dataset%20Overview]
-3. (**Depedencies**)[#Depedencies)
-4. (**Methodology**)[#Methodology]
-5. (**Result and Insight**)[#Result%20and%20Insight]
-6. (**Author**)[#Author]
+1. [**Project Overview**](#Project%20Overview)
+2. [**Dataset Overview**](#Dataset%20Overview)
+3. [**Depedencies**](#Depedencies)
+4. [**Methodology**](#Methodology)
+5. [**Result and Insight**](#Result%20and%20Insight)
+6. [**Author**](#Author)
 
 ## **Project Overview**
 The Water Potability Classification project focuses on building a machine learning model to determine whether water is safe for consumption based on key physicochemical properties. The primary goal of this project is developing a reliable and efficient classification system that can assist in identifying potable water sources. By providing an automated solution, this project benefits consumers by enabling quicker and more accurate assessments of water quality, empowering communities, water management agencies, and environmental researchers to make informed decisions about water safety.
