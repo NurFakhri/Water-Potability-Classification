@@ -1,11 +1,17 @@
 # 🚱 Water-Potability-Classification 🚰
 
 ## Table of Content
+1. (**Project Overview**)[#Project%20Overview]
+2. (**Dataset Overview**)[#Dataset%20Overview]
+3. (**Depedencies**)[#Depedencies)
+4. (**Methodology**)[#Methodology]
+5. (**Result and Insight**)[#Result%20and%20Insight]
+6. (**Author**)[#Author]
 
-## Project Overview
+## **Project Overview**
 The Water Potability Classification project focuses on building a machine learning model to determine whether water is safe for consumption based on key physicochemical properties. The primary goal of this project is developing a reliable and efficient classification system that can assist in identifying potable water sources. By providing an automated solution, this project benefits consumers by enabling quicker and more accurate assessments of water quality, empowering communities, water management agencies, and environmental researchers to make informed decisions about water safety.
 
-## Dataset Overview
+## **Dataset Overview**
 The *Water Quality* is a publicly accessible dataset provided by Aditya Kadiwal on [Kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability), designed to classify water potability based on various chemical and physical parameters. 
 
 | **Feature**         | **Data Type** | **Description**                                                                 |
@@ -21,7 +27,7 @@ The *Water Quality* is a publicly accessible dataset provided by Aditya Kadiwal 
 | `Turbidity`         | Float         | Measure of the light-emitting property of water, measured in NTU.              |
 | `Potability`        | Integer       | Indicates if water is safe for human consumption: 1 = Potable, 0 = Not potable.| 
 
-## Depedencies
+## **Depedencies**
 Below are the Python libraries used in this project, along with their functionalities:  
 
 - **pandas**: For data manipulation and analysis.  
@@ -89,3 +95,46 @@ The methodology for the *Water Potability Classification* project is divided int
    - Providing rapid water safety assessments for communities and researchers.  
 
 This structured approach ensures the project achieves its goals of creating an accurate, interpretable, and user-oriented water potability classification system.
+
+## **Result and Insight**
+
+1. **Best Algorithm**  
+   The best-performing algorithm in this study is the **Random Forest**, which achieved the highest performance among the tested algorithms. It demonstrated the best performence for both the original and resampled datasets.
+
+2. **Best Features**  
+   The top six features contributing most to the model's performance, as identified through BFE's feature selection techniques, are:  
+   - `Hardness`  
+   - `Solids`  
+   - `Chloramines`  
+   - `ph`  
+   - `Sulfate`  
+   - `Conductivity`   
+
+3. **Performance Metrics**  
+   The Random Forest model achieved the following metrics on the test set:  
+   - Accuracy: 74%  
+   - Precision: 72%  
+   - Recall: 65%  
+   - F1-Score: 74%  
+
+4. **Insights from Feature Importance**  
+   - **`Hardness` and `Solids`**: Highly correlated with water's mineral content, which plays a crucial role in determining its usability.  
+   - **`Chloramines`**: A key indicator of water treatment processes, directly affecting potability.  
+   - **`ph`**: Strongly linked to acidity or alkalinity, a primary factor in water safety.  
+   - **`Sulfate` and `Conductivity`**: Indicators of chemical composition and electrical properties, influencing water purity.  
+
+5. **Interpretation with LIME**  
+   LIME interpretations showed that specific feature values (e.g., high chloramines levels or extreme pH values) consistently influenced the model's classification, providing valuable insights for practical applications like real-time water quality monitoring.  
+
+6. **Error Analysis**  
+   Misclassifications mostly occurred in borderline cases where feature values were near threshold levels (e.g., marginal pH or sulfate levels). This suggests that additional data or refined thresholds could further improve accuracy.  
+
+7. **User Scenarios and Deployment**  
+   The model is suitable for deployment in:  
+   - Automated water quality monitoring systems.  
+   - Mobile applications for community-based water testing.  
+   - Research projects analyzing regional water quality trends.  
+
+## **Author**
+
+(Muhammad Hadi Nur Fakhri)[https://github.com/NurFakhri)
